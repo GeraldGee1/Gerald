@@ -1,0 +1,10 @@
+node_modules/
+package-lock.json
+session/
+sessions/
+temp/
+.env
+data/store.json
+data/session_backup.b64
+*.log
+.DS_Store

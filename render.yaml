@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: ruthlessness-md
+    runtime: node
+    plan: free
+    buildCommand: npm install --legacy-peer-deps
+    startCommand: npm start
+    healthCheckPath: /ping
+    envVars:
+      - key: OWNER_NUMBER
+        value: 233598711173
+      - key: APP_URL
+        value: https://ruthlessness-md.onrender.com
+      - key: PORT
+        value: 3000
